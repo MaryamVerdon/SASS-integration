@@ -63,7 +63,8 @@ body {
     @include text;
     cursor: pointer;
     border: 2px solid $black;
-    padding: 10px 20px;
+    height: 44px;
+    width: 170px;
     background: transparent;
     color: $black;
     font-size: 0.75rem;
