@@ -317,8 +317,12 @@ footer {
   grid-template-columns: 50% 50%;
   background: rgb(233, 233, 233);
   width: 85%;
-  min-width: 640px;
   margin: 0 auto 70px;
+}
+@media screen and (max-width: 900px) {
+  footer {
+    grid-template-columns: 1fr;
+  }
 }
 footer form {
   display: grid;
@@ -365,6 +369,12 @@ footer .infos {
   grid-template-rows: repeat(4, 1fr);
   border-left: 1px solid rgb(209, 209, 209);
 }
+@media screen and (max-width: 900px) {
+  footer .infos div:nth-child(1) {
+    border-top: 1px solid rgb(209, 209, 209);
+    padding: 20px 0;
+  }
+}
 footer .infos div {
   border-bottom: 1px solid rgb(209, 209, 209);
   display: grid;
@@ -399,7 +409,18 @@ footer .infos div ul li {
   align-items: center;
   margin-right: 20px;
 }
+@media screen and (max-width: 900px) {
+  footer .infos div ul li {
+    height: 34px;
+    width: 34px;
+  }
+}
 footer .infos div ul li a {
   color: black;
   font-size: 1.1rem;
+}
+@media screen and (max-width: 900px) {
+  footer .infos div ul li a {
+    font-size: 0.8rem;
+  }
 }/*# sourceMappingURL=index.css.map */

@@ -3,8 +3,11 @@ footer {
     grid-template-columns: 50% 50%;
     background: $grey2;
     width: 85%;
-    min-width: 640px;
     margin: 0 auto 70px;
+
+    @media screen and (max-width: 900px) {
+        grid-template-columns: 1fr;
+    }
     
     form {
        display: grid;
@@ -40,12 +43,19 @@ footer {
         grid-template-rows: repeat(4, 1fr);
         border-left: 1px solid $grey1;
         
+        div:nth-child(1) {
+            @media screen  and (max-width: 900px) {
+                border-top: 1px solid $grey1;
+                padding: 20px 0;
+            }
+        }
+
         div {
             border-bottom: 1px solid $grey1;
             display: grid;
             grid-template-columns: 30% 70%;
             align-items: center;
-            
+
             #libelle {
                 text-align: left;
                 padding-left: 40px;
@@ -72,9 +82,18 @@ footer {
                     @include center-flex;
                     margin-right: 20px;
 
+                    @media screen  and (max-width: 900px) {
+                        height: 34px;
+                        width: 34px;
+                    }
+
                     a {
                         color: black;
                         font-size: 1.1rem;
+
+                        @media screen  and (max-width: 900px) {
+                            font-size: 0.8rem;
+                        }
                     }
                 }
                
