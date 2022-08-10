@@ -199,6 +199,16 @@ main .section1 span:before, main .section1 span:after {
   top: 50%;
   transform: translateY(-50%);
 }
+@media screen and (max-width: 700px) {
+  main .section1 span:before, main .section1 span:after {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 600px) {
+  main .section1 span:before, main .section1 span:after {
+    width: 24%;
+  }
+}
 main .section1 span:before {
   left: 0;
 }
@@ -211,6 +221,11 @@ main .section1 h2 {
   font-family: inter, sans-serif;
   font-weight: 700;
   font-size: 2.5rem;
+}
+@media screen and (max-width: 650px) {
+  main .section1 h2 {
+    font-size: 1.7rem;
+  }
 }
 main .section1 p {
   font-style: italic;
@@ -246,6 +261,11 @@ main .section2 {
   justify-content: center;
   align-items: center;
   border-top: 1px solid rgb(209, 209, 209);
+}
+@media screen and (max-width: 700px) {
+  main .section2 {
+    display: block;
+  }
 }
 main .section2 .section-left, main .section2 .section-right {
   padding: 60px;
